@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     console.log("beginDate: ", beginDate);
     console.log("endDate: ", endDate);
-    console.log("type_flow: ", type_flow);
 
     let setBaseUrl = null;
     if (cda === "internal") {
