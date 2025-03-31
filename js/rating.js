@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     let setBaseUrl = null;
     if (cda === "internal") {
-        setBaseUrl = `https://wm.${office.toLowerCase()}.ds.usace.army.mil:8243/${office.toLowerCase()}-data/`;
-        // console.log("setBaseUrl: ", setBaseUrl);
+        setBaseUrl = `https://wm.${office.toLowerCase()}.ds.usace.army.mil/${office.toLowerCase()}-data/`;
     } else if (cda === "public") {
         setBaseUrl = `https://cwms-data.usace.army.mil/cwms-data/`;
-        // console.log("setBaseUrl: ", setBaseUrl);
     }
+    console.log("setBaseUrl: ", setBaseUrl);
 
     // Define the URL to fetch location groups based on category
     const categoryApiUrl = setBaseUrl + `ratings/metadata?office=${office}&page-size=500`;
